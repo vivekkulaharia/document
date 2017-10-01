@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Directed Graph Editor</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+
+  <body style="background-color:powderblue;" >
+  <input class="button-primary"  onclick="savejson()" value="Download" 		id="no_kernel" type="button"/>
+  <input class="button-primary"  onclick="kernel()" value="kernel node" 		id="kernel" type="button"/>
+  <input class="button-primary"  onclick="buffer()" value="buffer node"  		id="buffer" type="button"/>
+  <input class="button-primary"  onclick="update()" value="update"  		id="buffer1" type="button"/>
+  <input class="button-primary"  onclick="View()" value="View"  		id="buffe" type="button"/>
+  <input class="button-primary"  onclick="modify()" value="Modify kernel"  		id="buff" type="button"/>
+  <label style="cursor: pointer; border: 5px solid green;" align="center">Mode/Select
+  <label align="centre" style="cursor: pointer; border: 0px solid red;" id="tablebody">---</label>
+  </label>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+      <script src="app.js"></script>
+    <h5 align="center">Kernel</h2>
+    <table align="center">
+      <tbody id="tablebody4">
+      </tbody>
+    </table>
+    <table align="centre">
+      <tbody id="tablebody5">
+      </tbody>
+    </table>
+    <table align = "centre">
+      <tbody id="tablebody6"></tbody>
+      <tbody id="tablebody7"></tbody>
+    </table>
+    <label  style="cursor: pointer; border: 2px solid red;" id = "label1"></label>
+</body>
+
+
+</html>
